@@ -1,0 +1,9 @@
+x=c(92,44,107,99,111,104,192,59,33,82)
+y=c(88,90,76,58,30,98,21,90,89,92)
+z=x-y
+sg=sum(z>0)
+sl=sum(z<0)
+nl=sg+sl
+k=min(sg,sl)
+binom.test(k,nl,0.5)
+wilcox.test(z)
